@@ -14,7 +14,7 @@ public class MainWorkingHours {
     }
 
     static void workingHours(int s, DayOfWeek day) {
-        // цикл конечно не особо нужен, но вдруг пригодится
+        // цикл конечно не особо нужен, но вдруг пригодится.
         for (DayOfWeek d : DayOfWeek.values()) {
             if (s == 5 || s == 6) {
                 System.out.println(day + ".\nСегодня выходной!!!");
