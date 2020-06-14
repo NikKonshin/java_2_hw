@@ -1,5 +1,5 @@
 package homework1.enums;
-
+// Не правильно сделала коомит вношу изменения что бы можно было сделать ноую ветку
 public class MainWorkingHours {
 
     private final static int NUMBER_OF_WORKING_DAYS = 5;
