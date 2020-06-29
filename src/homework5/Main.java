@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
       float arr[] = new float[size];
-      //processArr(arr);
+      processArr(arr);
       processArrMulti(arr);
 
 
