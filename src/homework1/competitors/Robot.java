@@ -1,5 +1,5 @@
 package homework1.competitors;
-
+// Не правильно сделала коомит вношу изменения что бы можно было сделать ноую ветку
 public class Robot implements Actions {
     String name;
     int maxRunDistance;
