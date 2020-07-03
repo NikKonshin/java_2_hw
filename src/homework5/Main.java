@@ -23,6 +23,7 @@ public class Main {
             arr[i] = (float)(arr[i] * Math.sin(0.2f + i / 5) * Math.cos(0.2f + i / 5) * Math.cos(0.4f + i / 2));
         }
         System.out.println("Время выполнения программы в одном потоке: " + (System.currentTimeMillis() - a) + " мс");
+        System.out.println(arr[size-1]);
 
     }
 
@@ -40,16 +41,16 @@ public class Main {
 
         for (int i = 0; i <h ; i++) {
             arr1[i] = (float)(arr[i] * Math.sin(0.2f + i / 5) * Math.cos(0.2f + i / 5) * Math.cos(0.4f + i / 2));
-            System.out.println(arr1[i]);
         }
         for (int i = 0; i <h ; i++) {
             arr2[i] = (float)(arr[i] * Math.sin(0.2f + i / 5) * Math.cos(0.2f + i / 5) * Math.cos(0.4f + i / 2));
-            System.out.println(arr2[i]);
         }
 
         System.arraycopy(arr1, 0, arr, 0, h);
         System.arraycopy(arr2, 0, arr, h, h);
         System.out.println("Время выполнения программы в двух потоках: " + (System.currentTimeMillis() - a) + " мс");
+        System.out.println(arr[size-1]);
+
 
     }
 }
